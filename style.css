@@ -22,6 +22,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 200px auto 50px;
+    min-height: 100vh;
     grid-template-areas: 
     "header header header header"
     "slogan slogan slogan slogan"
@@ -152,4 +153,10 @@
       .sidebar img {
         width: 40%;
       }
+  }
+
+  @media (max-width:468px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
   }
